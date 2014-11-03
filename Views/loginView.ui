@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>339</width>
+    <height>186</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Bejelentkezés</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="Resources/loginResource.qrc">:/login/pythonLogoSmall.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>pyInstructor</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Email:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="emailField"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Jelszó:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="passwordField"/>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QLabel" name="forgetPasswordLabel">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Elfelejtett jelszó</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" rowspan="2">
+     <widget class="QToolButton" name="loginButton">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bejelentkezés</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources/loginResource.qrc">
+        <normaloff>:/login/keywords1.png</normaloff>:/login/keywords1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="registerLabel">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Regisztráció</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="Resources/loginResource.qrc"/>
+  <include location="C:/Users/Adam/Anaconda/Lib/site-packages/PyQt4/Resources/loginResource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

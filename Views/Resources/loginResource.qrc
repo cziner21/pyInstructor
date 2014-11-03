@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="login">
+    <file>keywords1.png</file>
+    <file>pythonLogoSmall.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,46 @@
+﻿firstName
+lastName
+email
+password
+countryId
+city
+address
+phone
+
+
+
+select result from results
+inner join exams ON exams.id = results.id
+inner join exams_topics_conn etc ON etc.examsid = exams.id
+inner join topics ON topics.id = etc.topicsid
+where topics.name = 'csharp' AND exams.examDate BETWEEN '2013-09-31'
+AND '2013-11-20'
+
+
+insert into questions('Which of the following will be the correct output for the C#.NET code snippet given below?
+
+String s1 = "ALL MEN ARE CREATED EQUAL";
+String s2;
+s2 = s1.Substring(12, 3); 
+Console.WriteLine(s2);',3);
+
+insert into answers('are',1);
+insert into answers('cre',1);
+
+
+insert into correctAnswers('cre',1);
+
+mi kell a lecsóba? 
+a) paradicsom
+b) paprika
+c) hagyma
+d) káposzta
+e) zsiráf
+f) ananász
+g) spenót
+
+a,b,c
+
+
+
+ha több válasz is lehetséges úgy csinálom, hogy még veszek fel pluz válasz lehetőséget, pl hogy az aés d is helyes
