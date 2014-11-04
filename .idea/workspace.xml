@@ -43,8 +43,10 @@
       <file leaf-file-name="DataBaseConfig2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataBaseConfig2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="28" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="4301">
-              <folding />
+            <state line="241" column="70" selection-start="8347" selection-end="8389" vertical-scroll-proportion="0.0" vertical-offset="3796" max-vertical-offset="4335">
+              <folding>
+                <element signature="e#14#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,31 +54,73 @@
       <file leaf-file-name="loginView.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/loginView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="88" selection-start="2967" selection-end="2967" vertical-scroll-proportion="0.0" vertical-offset="831" max-vertical-offset="2193">
+            <state line="67" column="77" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2193">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginViewModel.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ViewModels/loginViewModel.py">
+      <file leaf-file-name="signUpView.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/signUpView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.08027923" vertical-offset="107" max-vertical-offset="680">
+            <state line="29" column="62" selection-start="853" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2414">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signUpViewModel.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ViewModels/signUpViewModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="24" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
               <folding>
-                <element signature="e#14#51#0" expanded="true" />
+                <element signature="e#14#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="examViewModel.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="forgotPasswordView.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/forgotPasswordView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="39" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1598">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forgotPasswordViewModel.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ViewModels/forgotPasswordViewModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+              <folding>
+                <marker date="1415118067530" expanded="true" signature="14:150" placeholder="import ..." />
+                <marker date="1415118067530" expanded="true" signature="219:491" placeholder="..." />
+                <marker date="1415118067530" expanded="true" signature="452:491" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginViewModel.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ViewModels/loginViewModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+              <folding>
+                <element signature="e#14#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="examViewModel.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ViewModels/examViewModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="1" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4250">
+            <state line="111" column="43" selection-start="3894" selection-end="3894" vertical-scroll-proportion="0.4007421" vertical-offset="1671" max-vertical-offset="4250">
               <folding>
                 <element signature="e#40#66#0" expanded="true" />
-                <marker date="1415045364381" expanded="true" signature="4366:6014" placeholder="..." />
-                <marker date="1415045364381" expanded="true" signature="4367:6014" placeholder="..." />
+                <marker date="1415118931947" expanded="true" signature="4370:6018" placeholder="..." />
+                <marker date="1415118931947" expanded="true" signature="4371:6018" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -126,12 +170,16 @@
         <option value="$PROJECT_DIR$/DataBaseConfig.py" />
         <option value="$PROJECT_DIR$/ViewModels/ggg.py" />
         <option value="$PROJECT_DIR$/UnitTests/ll.py" />
-        <option value="$PROJECT_DIR$/DataBaseConfig2.py" />
         <option value="$PROJECT_DIR$/UnitTests/first.py" />
-        <option value="$PROJECT_DIR$/Views/loginView.py" />
         <option value="$PROJECT_DIR$/ViewModels/teszteles.py" />
-        <option value="$PROJECT_DIR$/ViewModels/examViewModel.py" />
+        <option value="$PROJECT_DIR$/Views/loginView.py" />
+        <option value="$PROJECT_DIR$/Views/signUpView.py" />
+        <option value="$PROJECT_DIR$/Views/forgotPasswordView.py" />
+        <option value="$PROJECT_DIR$/ViewModels/signUpViewModel.py" />
+        <option value="$PROJECT_DIR$/ViewModels/forgotPasswordViewModel.py" />
+        <option value="$PROJECT_DIR$/DataBaseConfig2.py" />
         <option value="$PROJECT_DIR$/ViewModels/loginViewModel.py" />
+        <option value="$PROJECT_DIR$/ViewModels/examViewModel.py" />
       </list>
     </option>
   </component>
@@ -234,12 +282,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Programok/Python" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -250,62 +298,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.loginViewModel">
-    <configuration default="false" name="first" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyInstructor" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnitTests/first.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="examViewModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ViewModels" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyInstructor" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ViewModels/examViewModel.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="loginView" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Views" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyInstructor" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Views/loginView.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="loginViewModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,7 +318,25 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="teszteles" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="forgotPasswordView" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Views" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyInstructor" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Views/forgotPasswordView.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="signUpViewModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -338,7 +348,43 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pyInstructor" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ViewModels/teszteles.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ViewModels/signUpViewModel.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="forgotPasswordViewModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ViewModels" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyInstructor" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ViewModels/forgotPasswordViewModel.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataBaseConfig2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyInstructor" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataBaseConfig2.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -487,19 +533,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.DataBaseConfig" />
-      <item index="1" class="java.lang.String" itemvalue="Python.first" />
-      <item index="2" class="java.lang.String" itemvalue="Python.examViewModel" />
-      <item index="3" class="java.lang.String" itemvalue="Python.loginView" />
-      <item index="4" class="java.lang.String" itemvalue="Python.loginViewModel" />
-      <item index="5" class="java.lang.String" itemvalue="Python.teszteles" />
+      <item index="1" class="java.lang.String" itemvalue="Python.loginViewModel" />
+      <item index="2" class="java.lang.String" itemvalue="Python.forgotPasswordView" />
+      <item index="3" class="java.lang.String" itemvalue="Python.signUpViewModel" />
+      <item index="4" class="java.lang.String" itemvalue="Python.forgotPasswordViewModel" />
+      <item index="5" class="java.lang.String" itemvalue="Python.DataBaseConfig2" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.loginViewModel" />
-        <item index="1" class="java.lang.String" itemvalue="Python.teszteles" />
-        <item index="2" class="java.lang.String" itemvalue="Python.loginView" />
-        <item index="3" class="java.lang.String" itemvalue="Python.examViewModel" />
-        <item index="4" class="java.lang.String" itemvalue="Python.first" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DataBaseConfig2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.forgotPasswordViewModel" />
+        <item index="3" class="java.lang.String" itemvalue="Python.signUpViewModel" />
+        <item index="4" class="java.lang.String" itemvalue="Python.forgotPasswordView" />
       </list>
     </recent_temporary>
   </component>
@@ -552,13 +598,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25227273" sideWeight="0.67111856" order="3" side_tool="true" content_ui="combo" x="1025" y="74" width="341" height="622" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25984848" sideWeight="0.67111856" order="3" side_tool="true" content_ui="combo" x="1025" y="74" width="341" height="622" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3409091" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -567,7 +614,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -587,9 +633,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25227273" sideWeight="0.67111856" order="3" side_tool="true" content_ui="combo" x="1025" y="74" width="341" height="622" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -609,41 +655,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ViewModels/examViewModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="39" selection-start="8733" selection-end="8733" vertical-scroll-proportion="0.0" vertical-offset="3677" max-vertical-offset="4250">
-          <folding>
-            <element signature="e#40#66#0" expanded="true" />
-            <marker date="1415045364381" expanded="true" signature="4366:6014" placeholder="..." />
-            <marker date="1415045364381" expanded="true" signature="4367:6014" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/examView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="60" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2890">
-          <folding>
-            <marker date="1414920871102" expanded="true" signature="8022:8500" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTests/first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTests/first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTests/first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UnitTests/first.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
@@ -669,9 +680,18 @@
         <state line="13" column="12" selection-start="291" selection-end="291" vertical-scroll-proportion="0.58776593" vertical-offset="0" max-vertical-offset="442" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataBaseConfig2.py">
+    <entry file="file://$PROJECT_DIR$/Views/examView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="4301">
+        <state line="22" column="44" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="2890">
+          <folding>
+            <marker date="1414920871102" expanded="true" signature="8022:8500" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/loginView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="77" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2193">
           <folding />
         </state>
       </provider>
@@ -683,38 +703,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/examView.py">
+    <entry file="file://$PROJECT_DIR$/Views/forgotPasswordView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="2890">
+        <state line="29" column="39" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewModels/forgotPasswordViewModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <folding>
-            <marker date="1414920871102" expanded="true" signature="8022:8500" placeholder="..." />
+            <marker date="1415118067530" expanded="true" signature="14:150" placeholder="import ..." />
+            <marker date="1415118067530" expanded="true" signature="219:491" placeholder="..." />
+            <marker date="1415118067530" expanded="true" signature="452:491" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-762174762/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="1119" selection-end="1183" vertical-scroll-proportion="0.33333334" vertical-offset="309" max-vertical-offset="86683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/signUpView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="62" selection-start="853" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewModels/signUpViewModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewModels/loginViewModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding>
+            <element signature="e#14#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBaseConfig2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="70" selection-start="8347" selection-end="8389" vertical-scroll-proportion="0.0" vertical-offset="3796" max-vertical-offset="4335">
+          <folding>
+            <element signature="e#14#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ViewModels/examViewModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="1" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4250">
+        <state line="111" column="43" selection-start="3894" selection-end="3894" vertical-scroll-proportion="0.4007421" vertical-offset="1671" max-vertical-offset="4250">
           <folding>
             <element signature="e#40#66#0" expanded="true" />
-            <marker date="1415045364381" expanded="true" signature="4366:6014" placeholder="..." />
-            <marker date="1415045364381" expanded="true" signature="4367:6014" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/loginView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="88" selection-start="2967" selection-end="2967" vertical-scroll-proportion="0.0" vertical-offset="831" max-vertical-offset="2193">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewModels/loginViewModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.08027923" vertical-offset="107" max-vertical-offset="680">
-          <folding>
-            <element signature="e#14#51#0" expanded="true" />
+            <marker date="1415118931947" expanded="true" signature="4370:6018" placeholder="..." />
+            <marker date="1415118931947" expanded="true" signature="4371:6018" placeholder="..." />
           </folding>
         </state>
       </provider>

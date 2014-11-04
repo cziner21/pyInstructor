@@ -65,7 +65,7 @@ class Ui_MainWindow(object):
         self.passwordField = QtGui.QLineEdit(self.centralwidget)
         self.passwordField.setObjectName(_fromUtf8("passwordField"))
         self.formLayout.setWidget(1, QtGui.QFormLayout.FieldRole, self.passwordField)
-        self.passwordField.setEchoMode(QtGui.QLineEdit.Password) #jelszó mezó beállítása
+        self.passwordField.setEchoMode(QtGui.QLineEdit.Password) #jelszó mező beállítása
         self.gridLayout.addLayout(self.formLayout, 1, 0, 1, 3)
         self.forgetPasswordLabel = QtGui.QLabel(self.centralwidget)
         font = QtGui.QFont()

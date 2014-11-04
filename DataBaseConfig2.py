@@ -1,5 +1,6 @@
 #coding: utf8
 import pyodbc
+from PyQt4.QtGui import *
 
 class DataBaseConfig(object):
 
@@ -23,7 +24,8 @@ class DataBaseConfig(object):
                 topicsNameList.append(row.name)
             return topicsNameList
         except Exception:
-            print Exception.message
+            QMessageBox.about(self, u"Hiba", u"Nem lehet lekérni a témaköröket a következők miatt: %s" % (
+           Exception.message))
         finally:
             connection.close()
 

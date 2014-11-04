@@ -21,7 +21,7 @@ class MainView(QMainWindow,examView.Ui_MainWindow):
         palette = self.lcdNumber.palette()
         palette.setColor(palette.WindowText, QColor(0, 255, 0))
         self.lcdNumber.setPalette(palette)
-        self.start_time = 10
+        self.start_time = 1800
         self.lcdNumber.display("%02d:%02d" % (self.start_time/60,self.start_time % 60))
 
         self.FillTopicsCombobox()
@@ -66,7 +66,7 @@ class MainView(QMainWindow,examView.Ui_MainWindow):
         self.startExamButton.setEnabled(False)
         self.examsTypeCombobox.setEnabled(False)
         self.timer.stop()
-        self.start_time = 10
+        self.start_time = 1800
         self.lcdNumber.display("%02d:%02d" % (self.start_time/60,self.start_time % 60))
         # Restart the timer
         self.timer.start(1000)
