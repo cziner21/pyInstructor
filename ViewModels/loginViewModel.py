@@ -1,10 +1,15 @@
 #coding: utf8
-from Views import loginView
-from ViewModels import examViewModel, forgotPasswordViewModel, signUpViewModel
-from PySide.QtCore import *
-from PyQt4.QtGui import *
-import DataBaseConfig2 as dbConfig
 import sys
+import hashlib
+import re   #regex modul
+
+from PyQt4.QtGui import *
+
+from DataBase import mySQLDatabaseConfig as dbConfig2
+from Views import loginView
+from ViewModels import dashBoardViewModel, forgotPasswordViewModel, signUpViewModel
+import mssqlServerDatabaseConfig as dbConfig
+
 
 class Login(QMainWindow,loginView.Ui_MainWindow):
 
@@ -15,8 +20,6 @@ class Login(QMainWindow,loginView.Ui_MainWindow):
         self.forgetPasswordLabel.mousePressEvent = self.ForgotPassword
         self.registerLabel.mousePressEvent = self.RegisterNewUser
         self.loginButton.clicked.connect(self.Dashboard)
-
-
 
 
     def ForgotPassword(self,event):
@@ -33,8 +36,36 @@ class Login(QMainWindow,loginView.Ui_MainWindow):
         self.signUpWindow.show()
 
     def Dashboard(self):
-        self.otherWindow = examViewModel.MainView()
-        self.otherWindow.show()
+        if self.Validate():
+            myDbConfig = dbConfig2.MySqlDatabaseConfig()
+            email = self.emailField.text()
+            password = hashlib.sha512(self.passwordField.text()).hexdigest()
+
+            if myDbConfig.TryToLogin(email,password):
+
+            #if hashlib.sha512("self.passwordField.text()").hexdigest() ==
+
+                self.otherWindow = dashBoardViewModel.DashBoard(email)
+                self.otherWindow.show()
+            else:
+                QMessageBox.about(self, u"Hiba", u"Hibás név vagy jelszó!" )
+
+    def Validate(self):
+        error = ""
+        validEmailPattern = "[^@]+@[^@]+\.[^@]+"
+
+        if self.passwordField.text() == "":
+            error += u"A jelszó nem lehet üres!\n"
+        if self.emailField.text() == "":
+            error += u"Az email cím nem lehet üres!\n"
+        #print re.match(validEmailPattern,self.emailField.text())
+        if self.emailField.text() != "" and re.match(validEmailPattern,self.emailField.text())==None:
+            error += u"Nem érvényes email formátum!\n"
+        if error :
+            QMessageBox.about(self, u"Hiba", error)
+            return False
+        else:
+            return True
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

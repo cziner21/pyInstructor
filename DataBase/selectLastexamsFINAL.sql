@@ -1,0 +1,1 @@
+SELECT u.id,concat(lastName,' ',firstName) as fullName, email, _subQuery.result, _subQuery.examDate, t.name as TopicName from (SELECT r1.* FROM results r1 JOIN (SELECT userId, MAX(id) id FROM results GROUP BY userId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1 

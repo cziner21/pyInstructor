@@ -1,12 +1,14 @@
 #coding: utf8
 #from PySide import QtGui
-from Views import examView
+import sys
+import datetime
+
 from PySide.QtCore import *
 from PyQt4.QtGui import *
-import DataBaseConfig2 as dbConfig
-import sys
-import math
-import datetime
+
+from DataBase import mssqlServerDatabaseConfig as dbConfig
+from Views import examView
+
 
 class MainView(QMainWindow,examView.Ui_MainWindow):
 
