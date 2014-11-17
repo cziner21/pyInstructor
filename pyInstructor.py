@@ -30,8 +30,8 @@ class Login(QMainWindow,loginView.Ui_MainWindow):
     def Dashboard(self):
         if self.Validate():
             myDbConfig = dbConfig.MySqlDatabaseConfig()
-            email = self.emailField.text()
-            password = self.passwordField.text()
+            email = unicode(self.emailField.text())
+            password = unicode(self.passwordField.text())
 
             if myDbConfig.TryToLogin(email,password):
 

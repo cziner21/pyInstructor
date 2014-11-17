@@ -1,0 +1,44 @@
+2014-11-15 15:07:18,167 :
+ New User inserted:
+  Horváth Imre h.imre@gmail.com
+2014-11-15 15:10:28,470 :
+ User entered:
+   h.imre@gmail.com
+2014-11-15 15:13:30,204 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-15 15:21:13,684 :
+ New question inserted: Which of the following is the correct way to create an object of the class Sample?
+2014-11-15 15:27:21,773 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 AND city like '%eger%' order by fullName
+2014-11-15 15:29:05,585 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 order by fullName
+2014-11-15 15:36:13,101 :
+ New topic inserted: Python
+2014-11-15 15:36:13,108 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2014-11-15 15:36:13,141 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2014-11-15 15:36:13,242 :
+ New topic inserted: Python
+2014-11-15 15:36:13,250 :
+ New topic inserted: Python
+2014-11-15 15:36:13,259 :
+ New topic inserted: Python
+2014-11-15 15:36:13,269 :
+ New topic inserted: Python
+2014-11-15 15:36:13,279 :
+ New topic inserted: Python
+2014-11-15 15:39:24,344 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-15 15:41:45,721 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-15 15:43:15,263 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND _subQuery.result > '5' 

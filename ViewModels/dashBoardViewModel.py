@@ -5,7 +5,7 @@ import datetime
 from PySide.QtCore import *
 from PyQt4.QtGui import *
 
-from DTO import currentUserDTO, searchResultsDTO, userSearchDTO
+from DTO import currentUserDTO, searchResultsDTO, userSearchDTO, topicsDTO
 from DataBase import mySQLDatabaseConfig as dbConfig
 from Views import dashBoardView
 from ViewModels import addQuestionViewModel, barChartViewModel, aboutViewModel, editTopicViewModel, editUserViewModel, loadingViewModel
@@ -20,6 +20,8 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         #global variables
         self.CurrentQuestionSelectedId = -1
         self.SelectedTopicId = None
+        self.TopicList = []
+
 
         self.DataBase = dbConfig.MySqlDatabaseConfig()
 
@@ -50,6 +52,8 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         self.FillTopicsCombobox()
 
         self.stackedWidget.setCurrentIndex(1)
+
+
 
     def IsAdmin(self) :
         """
@@ -232,12 +236,24 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
 
     def FillTopicsCombobox(self) :
         _topicsList = self.DataBase.GetTopicsName()
+
+
+        #todo:teszt
+
+        self.TopicList = self.DataBase.GetTopicsList()
+
+
+
+        self.examsTypeCombobox.clear()
+        self.topicListCombobox.clear()
+
         self.examsTypeCombobox.addItems(_topicsList)
         self.topicListCombobox.addItems(_topicsList)
 
     def GenerateQuizByTopic(self) :
         self.yourPointsLabel.setText("")
         self.maxPointsLabel.setText("")
+
 
 
 
@@ -253,6 +269,12 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         _answerList = []
         questionListWithId = []
         questionIds = []
+
+
+        #todo:hb
+        #for topic in self.TopicList:
+        #    if topic.
+
 
         topics = unicode(self.examsTypeCombobox.currentText())
         topicsId = self.DataBase.GetTopicsIndexByName(topics)
@@ -330,16 +352,17 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         print("User pointsban ennyi van most: %d"%userPoints)
         print("User answers tartalma: %s"%self.UserAnswers)
 
-        model = self.currentExamTableView.model()
 
-        for row in range(model.rowCount()) :
-            for column in range(model.columnCount()) :
-                item = model.item(row, column)
+        __model = self.currentExamTableView.model()
+
+        for row in range(__model.rowCount()) :
+            for column in range(__model.columnCount()) :
+                item = __model.item(row, column)
 
                 if item.isCheckable and (item.checkState() == Qt.Checked) :
                     answersList = []
-                    answerId = model.item(row, 0)
-                    questionId = model.item(row, 2)
+                    answerId = __model.item(row, 0)
+                    questionId = __model.item(row, 2)
 
                     self.DataBase.InsertIntoUserAnswers(int(questionId.text()), int(answerId.text()))
                     answersList.append(int(answerId.text()))
@@ -822,7 +845,7 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
                  self.User.Birthday = None
             else:
                 self.User.Birthday = unicode(self.birthdayEditBox.text())
-            password = self.passwordEditBox.text()
+            password = unicode(self.passwordEditBox.text())
 
             self.DataBase.UpdateOwnUserDataAndProfil(self.User,password)
 
