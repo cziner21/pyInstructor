@@ -95,14 +95,17 @@ class EditUser(QMainWindow,editUserView.Ui_MainWindow):
             firstName = unicode(self.firstNameEditBox.text())
             lastName = unicode(self.lastNameEditBox.text())
             email = unicode(self.emailEditBox.text())
+            city = unicode(self.cityEditBox.text())
+            address = unicode(self.addressEditBox.text())
+            phone = unicode(self.phoneEditBox.text())
 
             self.editedUserDatasDto.FistName = ""
-            self.editedUserDatasDto.FistName = firstName
-            self.editedUserDatasDto.LastName = lastName
-            self.editedUserDatasDto.Email = email
-            self.editedUserDatasDto.City = unicode(self.cityEditBox.text())
-            self.editedUserDatasDto.Address = unicode(self.addressEditBox.text())
-            self.editedUserDatasDto.Phone = unicode(self.phoneEditBox.text())
+            self.editedUserDatasDto.FistName = unicode(firstName)
+            self.editedUserDatasDto.LastName = unicode(lastName)
+            self.editedUserDatasDto.Email = unicode(email)
+            self.editedUserDatasDto.City = unicode(city)
+            self.editedUserDatasDto.Address = unicode(address)
+            self.editedUserDatasDto.Phone = unicode(phone)
             if self.birthDayEditBox.text() == "":
                  self.editedUserDatasDto.Birthday = None
             else:

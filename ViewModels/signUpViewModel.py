@@ -19,8 +19,8 @@ class SignUp(QMainWindow,signUpView.Ui_MainWindow):
             myDbConfig = dbConfig.MySqlDatabaseConfig()
             lastName = unicode(self.lastNameField.text())
             firstName = unicode(self.firstNameField.text())
-            email = self.emailField.text()
-            password = self.passwordField.text()
+            email = unicode(self.emailField.text())
+            password = unicode(self.passwordField.text())
             myDbConfig.InsertIntoUsers(firstName,lastName,email,password)
 
             QMessageBox.about(self, u"Siker", u"Sikeres hozzáadás")
