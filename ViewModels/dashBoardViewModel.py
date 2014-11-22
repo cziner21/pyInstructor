@@ -205,11 +205,6 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         #Kapcsolótábla feltöltése
         self.DataBase.InsertIntoTopicUserConn(self.CurrentTopicId, self.User.UserId)
 
-
-        #Aktuális témakör elérhető maximális pontszámának kiírása
-        maxPoint = self.DataBase.GetMaxPointForTopicByTopicsId(self.CurrentTopicId)
-        self.maxPointsLabel.setText("%d" % maxPoint[0][0])
-
         self.currentExamTableView.setVisible(True)
         self.sendExamButton.setVisible(True)
         self.startExamButton.setEnabled(False)
@@ -340,18 +335,11 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         self.timer.stop()
         self.examsTypeCombobox.setEnabled(True)
 
-        _questionList = []
-        _answerList = []
-        questionIds = []
+        maxPoint = len(self.questionIds)
 
-        myAnswersId = []
-        qId = []
+        self.maxPointsLabel.setText("%d" % maxPoint)
 
         userPoints = 0
-
-        print("User pointsban ennyi van most: %d"%userPoints)
-        print("User answers tartalma: %s"%self.UserAnswers)
-
 
         __model = self.currentExamTableView.model()
 
@@ -370,30 +358,55 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
                     answersList.append(int(questionId.text()))
                     self.UserAnswers.append(answersList)
 
+        goodAnswersList = self.DataBase.GetCorrectAnswersByTopicId(self.CurrentTopicId)
 
+        goodAnswers = []
+        for answer in goodAnswersList:
+            goodAnswers.append(answer[0])
 
-        for questionId in self.questionIds :
+        wrongAnswerIds = []
+        correctAnswerids = []
 
-            for correctAnswer in self.DataBase.GetCorrectAnswersByQuestionId(questionId) :
+        for userAnswer in self.UserAnswers :
+            if userAnswer[0] not in goodAnswers:
+                wrongAnswerIds.append(userAnswer[0])
+            else:
+                correctAnswerids.append(userAnswer[0])
 
-                for userAnswer in self.UserAnswers :
+        wrongQuestionIds = []
+        if wrongAnswerIds:
+            for id in wrongAnswerIds:
+                kid = self.DataBase.GetQuestionIdByAnswerId(id)
+                wrongQuestionIds.append(kid[0][0])
 
-                    if correctAnswer[2] == userAnswer[1] and correctAnswer[0] == userAnswer[0] :
-                        userPoints += 1
+        correctQuestionIds = []
+        if correctAnswerids:
+            for id in correctAnswerids:
+                kid = self.DataBase.GetQuestionIdByAnswerId(id)
+                correctQuestionIds.append(kid[0][0])
 
-        maxPoint = self.DataBase.GetMaxPointForTopicByTopicsId(self.CurrentTopicId)
-        #percentage = float(userPoints) / float(maxPoint[0][0]) * 100
-        print(u"User pointsban ennyi van a számolás után: %d"%userPoints)
+        wrong = []
+        if wrongQuestionIds:
+            for item in wrongQuestionIds:
+                if item not in wrong:
+                    wrong.append(item)
+
+        correct = []
+        if correctQuestionIds:
+            for item in correctQuestionIds:
+                if item not in correct:
+                    correct.append(item)
+
+        countPoint = 0
+        for i in correct:
+            if i not in wrong:
+                countPoint += 1
+
+        userPoints = countPoint
+
         self.yourPointsLabel.setText("%d" % userPoints)
 
         self.DataBase.InsertIntoResults(userPoints, self.User.UserId, self.CurrentTopicId, datetime.datetime.today())
-
-
-
-
-
-
-
 
     def ShowCurrentuserBarChart(self) :
         barChart = barChartViewModel.BarChart(self.User.UserId)

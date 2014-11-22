@@ -248,6 +248,37 @@ class MySqlDatabaseConfig(object):
         finally:
             connection.close()
 
+    def GetQuestionIdByAnswerId(self,answerId):
+        try:
+            connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
+
+            Cursor = connection.cursor()
+            Cursor.execute("select questionId from answers where id=%s ",answerId)
+            rows = Cursor.fetchall()
+
+
+            return rows
+        except Exception as e:
+            print e.args
+            logging.warning('Error while GetQuestionIdByAnswerId:\n    %s'%e.args)
+        finally:
+            connection.close()
+
+    def GetCorrectAnswersByTopicId(self,topicId):
+        try:
+            connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
+
+            Cursor = connection.cursor()
+            Cursor.execute("select id from answers where topicId=%s and isItCorrect=1",topicId)
+            rows = Cursor.fetchall()
+            
+            return rows
+        except Exception as e:
+            print e.args
+            logging.warning('Error while GetCorrectAnswersByTopicId:\n    %s'%e.args)
+        finally:
+            connection.close()
+
     def GetMaxPointForTopicByTopicsId(self,topicId):
         """A témakörhöz tartó maximális pontszám lekérése"""
 
