@@ -49,6 +49,8 @@ class ForgotPassword(QMainWindow,forgotPasswordView.Ui_MainWindow):
                     print e.args
                 finally:
                     smtpserver.close()
+                    QMessageBox.about(self, u"Email kiküldve",u"Új jelszavad kiküldtük a megadott email címre.")
+                    self.close()
 
     def Validate(self):
         error = ""
