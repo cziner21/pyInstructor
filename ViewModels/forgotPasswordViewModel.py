@@ -34,16 +34,21 @@ class ForgotPassword(QMainWindow,forgotPasswordView.Ui_MainWindow):
                 gmail_user = 'pyinstructor@gmail.com'
                 gmail_pwd = 'PtiCis+31'
                 smtpserver = smtplib.SMTP("smtp.gmail.com",587)
-                smtpserver.ehlo()
-                smtpserver.starttls()
-                smtpserver.ehlo
-                smtpserver.login(gmail_user, gmail_pwd)
-                header = 'To:' + to + '\n' + 'From: ' + gmail_user + '\n' + 'Subject:pyInstructor uj jelszo \n'
-                print header
-                msg = header + '\nSzia!\nUj jelszot igenyeltel a pyInstructor programhoz.\nUj jelszavad: '+newPassword+ '\n\n'
-                smtpserver.sendmail(gmail_user, to, msg)
-                print u'Jelszó sikeresen kiküldve!'
-                smtpserver.close()
+
+                try:
+                    smtpserver.ehlo()
+                    smtpserver.starttls()
+                    smtpserver.ehlo
+                    smtpserver.login(gmail_user, gmail_pwd)
+                    header = 'To:' + to + '\n' + 'From: ' + gmail_user + '\n' + 'Subject:pyInstructor uj jelszo \n'
+
+                    msg = header + '\nSzia!\nUj jelszot igenyeltel a pyInstructor programhoz.\nUj jelszavad: '+newPassword+ '\n\n'
+                    smtpserver.sendmail(gmail_user, to, msg)
+                    print u'Jelszó sikeresen kiküldve!'
+                except Exception as e:
+                    print e.args
+                finally:
+                    smtpserver.close()
 
     def Validate(self):
         error = ""

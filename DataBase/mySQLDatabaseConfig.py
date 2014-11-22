@@ -271,7 +271,7 @@ class MySqlDatabaseConfig(object):
             Cursor = connection.cursor()
             Cursor.execute("select id from answers where topicId=%s and isItCorrect=1",topicId)
             rows = Cursor.fetchall()
-            
+
             return rows
         except Exception as e:
             print e.args

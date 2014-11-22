@@ -861,6 +861,7 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
             password = unicode(self.passwordEditBox.text())
 
             self.DataBase.UpdateOwnUserDataAndProfil(self.User,password)
+            QMessageBox.about(self, u"Sikeres adatváltoztatás",u"Adatok sikeresen megváltoztatva.")
 
     def ValidateCurrentUserDatas(self):
         error = ""
