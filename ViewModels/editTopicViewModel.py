@@ -17,7 +17,7 @@ class EditTopic(QMainWindow,editTopicView.Ui_MainWindow):
 
 
         self.topicName = self.mysqlDatabase.GetTopicNameById(topicId)
-        print self.topicName
+
         self.editTopicNameBox.setText(self.topicName[0][0])
 
 

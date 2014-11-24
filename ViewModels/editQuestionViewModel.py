@@ -62,7 +62,7 @@ class EditQuestion(QMainWindow,addQuestionView.Ui_addQuestionWindow):
 
             answerLineEdit = QLineEdit()
             answerLineEdit.setText(answerList[i][1])
-            print answerList[i][1]
+
             self.answersLineEditList.append(answerLineEdit)
             cbx = QCheckBox()
             if answerList[i][3] == 1:
@@ -103,7 +103,7 @@ class EditQuestion(QMainWindow,addQuestionView.Ui_addQuestionWindow):
         while (i < len(self.answerIdList)):
             for j in range(0,len(self.answersLineEditList)):
                 if self.answersLineEditList[j].text() != "":
-                    print unicode(self.answersLineEditList[j].text())
+
                     answerText =  unicode(self.answersLineEditList[j].text())
 
                     isItCorrect =  self.answersCheckboxList[j].isChecked()

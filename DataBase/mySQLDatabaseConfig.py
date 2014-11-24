@@ -463,6 +463,7 @@ class MySqlDatabaseConfig(object):
             Cursor = connection.cursor()
 
             Cursor.execute("select * from results where userId = %s order by id desc limit 1",(userId))
+            ##Cursor.execute("SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId where r1.userId=%s")
             row = Cursor.fetchall()
             return row
         except Exception as e:
@@ -576,10 +577,10 @@ class MySqlDatabaseConfig(object):
         try:
             connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
             cursor = connection.cursor()
-            print "password hash előtt"
-            print password
+
+
             hexhash = hashlib.sha512(password).hexdigest()
-            print hexhash
+
 
 
             cursor.execute("update users set password = %s where id = %s",(hexhash,userId))
@@ -594,7 +595,7 @@ class MySqlDatabaseConfig(object):
         try:
             connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
             cursor = connection.cursor()
-            print editUserDto.FirstName
+
             cursor.execute("CALL sp_UpdateUserAndProfil(%s,%s,%s,%s,%s,%s,%s,%s,%s)",(editUserDto.Id,editUserDto.FirstName,editUserDto.LastName,editUserDto.Email,editUserDto.City,editUserDto.Address,editUserDto.Phone,editUserDto.Birthday,editUserDto.Privilidge))
             connection.commit()
         except Exception as e:
@@ -718,7 +719,7 @@ class MySqlDatabaseConfig(object):
             connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
             cursor = connection.cursor()
 
-            print questionId
+
 
             if isItCorrect:
                 cursor.execute('''insert into answers(answerText,questionId,isItCorrect,topicId) values (%s,%s,%s,%s)''',(answerText,questionId,isItCorrect,topicId))

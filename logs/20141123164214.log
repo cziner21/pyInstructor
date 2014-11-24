@@ -1,0 +1,85 @@
+2014-11-23 16:42:14,990 :
+ User entered:
+   admin@admin.hu
+2014-11-23 16:42:42,565 :
+ New topic inserted: Html
+2014-11-23 16:52:20,976 :
+ New question inserted: Where in an HTML document is the correct place to refer to an external style sheet? 
+2014-11-23 16:53:11,250 :
+ New question inserted: Which HTML tag is used to define an internal style sheet? 
+2014-11-23 16:54:07,369 :
+ New question inserted: How do you add a background color for all <h1> elements?
+2014-11-23 16:54:38,244 :
+ Question updated:
+   83 to Which HTML tag is used to define an internal style sheet? 
+2014-11-23 16:55:59,632 :
+ New question inserted: Which HTML tag is used to define an internal style sheet? 
+2014-11-23 16:56:19,201 :
+ User entered:
+   admin@admin.hu
+2014-11-23 16:58:29,214 :
+ New topic inserted: Python
+2014-11-23 16:59:31,859 :
+ New question inserted: what is the output of the below program:
+a = [1,2,3,None,(),[],]
+print len(a)
+2014-11-23 17:00:55,674 :
+ New topic inserted: C
+2014-11-23 17:02:16,785 :
+ New question inserted: Which header file should be included to use functions like malloc() and calloc()
+
+2014-11-23 17:03:48,539 :
+ New question inserted: What function should be used to free the memory allocated by calloc() ?
+2014-11-23 17:05:13,957 :
+ New question inserted: Specify the 2 library functions to dynamically allocate memory?
+2014-11-23 17:07:07,144 :
+ New question inserted: What is (void*)0?
+2014-11-23 17:08:15,742 :
+ New question inserted: If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable?
+2014-11-23 17:08:25,878 :
+ Question updated:
+   91 to If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable?
+2014-11-23 17:10:09,105 :
+ New question inserted: How will you free the allocated memory ?
+2014-11-23 17:11:35,983 :
+ New question inserted: The keyword used to transfer control from a function back to the calling function is
+
+2014-11-23 17:13:46,936 :
+ New question inserted: Which of the following function sets first n characters of a string to a given character?
+2014-11-23 17:15:04,944 :
+ New question inserted: How will you print \n on the screen?
+2014-11-23 17:16:43,227 :
+ New question inserted: Which of the following correctly shows the hierarchy of arithmetic operations in C?
+2014-11-23 17:16:55,084 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 17:19:19,028 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 17:19:19,073 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 17:19:31,263 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND t.name like '%c%' 
+2014-11-23 17:19:31,309 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND t.name like '%c%' 
+2014-11-23 17:19:34,598 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND t.name like '%c#%' 
+2014-11-23 17:19:34,637 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND t.name like '%c#%' 
+2014-11-23 17:19:39,634 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND t.name like '%c%' 
+2014-11-23 17:19:39,677 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND t.name like '%c%' 
+2014-11-23 17:20:12,308 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 17:20:12,346 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  

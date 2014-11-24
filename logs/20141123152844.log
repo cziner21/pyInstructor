@@ -1,21 +1,51 @@
-2014-11-22 21:24:01,543 :
+2014-11-23 15:28:44,487 :
  User entered:
    cziner.adam@gmail.com
-2014-11-22 21:24:36,973 :
+2014-11-23 15:28:48,267 :
  Searching in resut page:
     SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
-2014-11-22 21:24:43,464 :
+2014-11-23 15:30:23,421 :
  Searching in resut page:
     SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
-2014-11-22 21:24:43,519 :
+2014-11-23 15:30:23,464 :
  Searching in resut page:
     SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
-2014-11-22 21:25:13,137 :
+2014-11-23 15:31:02,996 :
+ User entered:
+   admin@admin.hu
+2014-11-23 15:31:07,114 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 order by fullName
+2014-11-23 15:31:38,259 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-23 15:32:09,509 :
+ User entered:
+   admin@admin.hu
+2014-11-23 15:32:13,233 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 order by fullName
+2014-11-23 15:32:26,401 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 AND firstName like '%Ádám%' order by fullName
+2014-11-23 15:32:43,926 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-23 15:32:53,053 :
  Searching in resut page:
     SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
-2014-11-22 21:25:13,194 :
+2014-11-23 15:32:53,092 :
  Searching in resut page:
     SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
-2014-11-22 21:25:13,240 :
+2014-11-23 15:32:53,125 :
  Searching in resut page:
     SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 15:34:00,631 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-23 15:34:21,210 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-23 15:34:26,424 :
+ User entered:
+   cziner.adam@gmail.com

@@ -115,9 +115,10 @@ class EditUser(QMainWindow,editUserView.Ui_MainWindow):
             else:
                 self.editedUserDatasDto.Privilidge = 1
 
-            print self.editedUserDatasDto.FistName
+
 
             self.mysqlDatabase.UpdateUserAndProfil(self.editedUserDatasDto)
-
+            QMessageBox.about(self, u"Sikeres adatváltoztatás",u"Adatok sikeresen megváltoztatva.")
+            self.close()
 
 

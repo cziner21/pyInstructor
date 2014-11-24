@@ -23,7 +23,7 @@ class ForgotPassword(QMainWindow,forgotPasswordView.Ui_MainWindow):
             if userDatas > 0:
 
                 newPassword = self.PasswordGenerator()
-                print newPassword
+
 
                 __dataBase.NewPassword(userDatas[0][0],newPassword)
 

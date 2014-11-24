@@ -1,0 +1,148 @@
+2014-11-23 11:16:21,670 :
+ New User inserted:
+  Demo Admin admin@admin.hu
+2014-11-23 11:16:58,247 :
+ New User inserted:
+  Demo User user@user.hu
+2014-11-23 11:17:12,667 :
+ User entered:
+   admin@admin.hu
+2014-11-23 11:17:57,611 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2014-11-23 11:18:07,601 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2014-11-23 11:18:13,584 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 11:19:29,503 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2014-11-23 11:19:33,634 :
+ User entered:
+   admin@admin.hu
+2014-11-23 11:19:34,730 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2014-11-23 11:19:37,013 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2014-11-23 11:19:40,029 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 order by fullName
+2014-11-23 11:21:20,698 :
+ New topic inserted: C#
+2014-11-23 11:21:20,732 :
+ New topic inserted: C#
+2014-11-23 11:21:50,010 :
+ New question inserted: A property can be declared inside a class, struct, Interface
+2014-11-23 11:22:57,605 :
+ New question inserted: Which of the following statements is correct about properties used in C#.NET
+2014-11-23 11:25:59,746 :
+ New question inserted: 
+
+A Student class has a property called RollNo and myStudent is a reference to a Student object and we want the statement myStudent.RollNo = 28 to fail. Which of the following options will ensure this functionality
+
+2014-11-23 11:26:13,697 :
+ Question updated:
+   63 to A Student class has a property called RollNo and myStudent is a reference to a Student object and we want the statement myStudent.RollNo = 28 to fail. Which of the following options will ensure this functionality
+
+2014-11-23 11:26:38,086 :
+ Question updated:
+   63 to A Student class has a property called RollNo and myStudent is a reference to a Student object and we want the statement myStudent.RollNo = 28 to fail. Which of the following options will ensure this functionality
+
+2014-11-23 11:32:36,282 :
+ New question inserted: If Sample class has a Length property with get accessor then which of the following statements will work correctly?
+2014-11-23 11:34:40,229 :
+ New question inserted: 
+
+Which of the following keyword is used to change the data and behavior of a base class by replacing a member of a base class with a new derived member
+
+2014-11-23 11:35:03,654 :
+ Question updated:
+   65 to Which of the following keyword is used to change the data and behavior of a base class by replacing a member of a base class with a new derived member
+2014-11-23 11:36:38,707 :
+ New question inserted: A derived class can stop virtual inheritance by declaring an override a
+2014-11-23 11:38:19,897 :
+ New question inserted: Which of the following statements is correct?
+2014-11-23 11:41:37,980 :
+ New question inserted: Which of the following is an 8-byte Integer
+2014-11-23 11:43:45,858 :
+ New question inserted: Which of the following are value types?
+2014-11-23 11:46:23,976 :
+ New question inserted: Which of the following statements are correct?
+2014-11-23 11:47:05,799 :
+ New question inserted: 
+
+A function returns a value, whereas a subroutine cannot return a value
+
+2014-11-23 11:47:27,572 :
+ Question updated:
+   71 to A function returns a value, whereas a subroutine cannot return a value
+
+2014-11-23 11:49:44,634 :
+ New question inserted: Which of the following can be facilitated by the Inheritance mechanism?
+2014-11-23 14:33:36,484 :
+ New question inserted: Which of the following is the correct way to create an object of the class Sample?
+2014-11-23 14:34:58,631 :
+ New question inserted: Which of the following statements are correct?
+2014-11-23 14:36:39,122 :
+ New question inserted: Which of the following statements are correct about the C#.NET code snippet given below?
+sample c;
+c = new sample()
+2014-11-23 14:36:59,989 :
+ Question updated:
+   75 to Which of the following statements are correct about the C#.NET code snippet given below?
+sample c; c = new sample();
+2014-11-23 14:38:23,404 :
+ New question inserted: Which of the following statements is correct about classes and objects in C#.NET
+2014-11-23 14:40:25,895 :
+ New question inserted: Which one of the following statements is correct?
+2014-11-23 14:41:43,897 :
+ New question inserted: Which of the following statements are correct about arrays used in C#.NET? 
+2014-11-23 14:43:05,263 :
+ New question inserted: 
+
+Which of the following statements are correct about an enum used inC#.NET? 
+
+2014-11-23 14:43:23,619 :
+ Question updated:
+   79 to Which of the following statements are correct about an enum used inC#.NET?
+2014-11-23 14:45:05,124 :
+ New question inserted: Which of the following statements are correct about exception handling in C#.NET? 
+2014-11-23 15:04:41,072 :
+ New question inserted: Which of the following statements are correct about exception handling in C#.NET? 
+2014-11-23 15:05:02,286 :
+ User entered:
+   admin@admin.hu
+2014-11-23 15:10:31,515 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 15:12:44,763 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 15:12:44,798 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 15:13:29,714 :
+ User entered:
+   user@user.hu
+2014-11-23 15:25:56,092 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  
+2014-11-23 15:26:43,209 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND _subQuery.result > '16' 
+2014-11-23 15:26:43,239 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  AND _subQuery.result > '16' 
+2014-11-23 15:27:23,325 :
+ New User inserted:
+  Cziner Ádám cziner.adam@gmail.com
+2014-11-23 15:27:44,851 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-23 15:27:53,875 :
+ Searching in resut page:
+    SELECT u.id,concat(lastName,' ',firstName) as fullName, email, t.name as TopicName, _subQuery.result, _subQuery.examDate  from (SELECT r1.* FROM results r1 JOIN (SELECT userId, topicId, MAX(id) id FROM results GROUP BY userId, topicId) r2 ON r1.id = r2.id AND r1.userId = r2.userId) as _subQuery inner join users u on u.id =_subQuery.userId inner join topics t on _subQuery.topicId = t.id where 1 = 1  

@@ -171,7 +171,7 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         self.stackedWidget.setCurrentIndex(2)
         self.UserAnswers = []
 
-        print(u"User answers tartalma TABVÁLTÁS: %s"%self.UserAnswers)
+
 
         self.timer = QTimer()
 
