@@ -2,6 +2,7 @@
 import MySQLdb
 import hashlib, datetime
 from PyQt4.QtGui import *
+from PySide.QtCore import *
 import logging, time
 
 class MySqlDatabaseConfig(object):
@@ -37,6 +38,20 @@ class MySqlDatabaseConfig(object):
         except Exception as e:
             print e.args
             logging.warning('Error while GetTopicName:\n    %s'%e.args)
+        finally:
+            connection.close()
+
+    def GetExamTimeByTopicsId(self,topicsId):
+        try:
+            connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
+            Cursor = connection.cursor()
+            Cursor.execute("select examTime from topics where id = %s",topicsId)
+            row = Cursor.fetchall()
+
+            return row[0][0]
+        except Exception as e:
+            print e.args
+            logging.error('Error while GetExamTimeByTopicId:\n  %s'%e.args)
         finally:
             connection.close()
 
@@ -523,6 +538,9 @@ class MySqlDatabaseConfig(object):
             else:
                 return True
 
+        except MySQLdb.Error as e:
+            print u"Nem sikerült csatlakozni az adatbázishoz:\n %s"%e.message
+            logging.warning('Error while TryToLogin:\n    %s'%e.args)
         except Exception as e:
             print e.args
             logging.warning('Error while TryToLogin:\n    %s'%e.args)
@@ -670,11 +688,12 @@ class MySqlDatabaseConfig(object):
         finally:
             connection.close()
 
-    def UpdateTopic(self,topicId,topicName):
+    def UpdateTopic(self,topicId,topicName,examTime):
         try:
             connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
             cursor = connection.cursor()
-            cursor.execute("update topics set name = %s where id = %s",(topicName,topicId))
+            print examTime
+            cursor.execute("update topics set name = %s, examTime = %s where id = %s",(topicName,examTime,topicId))
 
             connection.commit()
         except Exception as e:
@@ -683,12 +702,17 @@ class MySqlDatabaseConfig(object):
         finally:
             connection.close()
 
-    def InsertIntoTopics(self,topicName):
+    def InsertIntoTopics(self,topicName,examTime):
+        """
+        Új téma hozzáadása
+        @param topicName: új téma neve
+        @param examTime: vizsga ideje másodpercben
+        """
         try:
             connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
             cursor = connection.cursor()
-
-            cursor.execute("insert into topics(name) values(%s)",(topicName))
+            print examTime
+            cursor.execute("insert into topics(name,examTime) values(%s,%s)",(topicName,examTime))
             connection.commit()
 
         except Exception as e:
@@ -769,7 +793,6 @@ class MySqlDatabaseConfig(object):
             logging.warning('Error while InsertIntoResults:\n    %s'%e.args)
         finally:
             connection.close()
-
 
 
 

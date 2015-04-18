@@ -67,7 +67,7 @@ class Ui_AboutWindow(object):
     def retranslateUi(self, AboutWindow):
         AboutWindow.setWindowTitle(_translate("AboutWindow", "A programról", None))
         self.label.setText(_translate("AboutWindow", "pyInstructor", None))
-        self.label_2.setText(_translate("AboutWindow", "v1.04", None))
+        self.label_2.setText(_translate("AboutWindow", "v1.06", None))
         self.label_3.setText(_translate("AboutWindow", "<html><head/><body><p>A <span style=\" font-weight:600;\">pyInstructor</span> egy python nyelven készült<br/><br/>vizsgáztató program,melynek fő célja, hogy<br/><br/>megkönnyítse a programtervező informatikusok<br/><br/>helyzetetét az álláskeresésben. </p><p><br/></p><p>Github repository: <a href=\"https://github.com/cziner21/pyInstructor\"><span style=\" text-decoration: underline; color:#0000ff;\">https://github.com/cziner21/pyInstructor</span></a></p><p><br/></p><p>Készítette: <span style=\" font-weight:600;\">Cziner Ádám</span><br/>Email:<a href=\"mailto:cziner.adam@gmail.com\"><span style=\" text-decoration: underline; color:#0000ff;\">cziner.adam@gmail.com</span></a></p></body></html>", None))
 
 

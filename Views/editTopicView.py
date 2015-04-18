@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'editTopicView.ui'
 #
-# Created: Tue Nov 11 21:42:37 2014
+# Created: Sat Apr 18 22:57:29 2015
 #      by: PyQt4 UI code generator 4.9.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,8 +26,8 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(236, 91)
-        MainWindow.setFixedSize(236, 91) # méretezés letiltása
+        MainWindow.resize(273, 120)
+        MainWindow.setFixedSize(273, 120) # méretezés letiltása
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.gridLayout = QtGui.QGridLayout(self.centralwidget)
@@ -43,6 +43,14 @@ class Ui_MainWindow(object):
         self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
         self.horizontalLayout_2 = QtGui.QHBoxLayout()
         self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
+        self.label_2 = QtGui.QLabel(self.centralwidget)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.horizontalLayout_2.addWidget(self.label_2)
+        self.examTimeBox = QtGui.QLineEdit(self.centralwidget)
+        self.examTimeBox.setMaxLength(3)
+        self.examTimeBox.setPlaceholderText(_fromUtf8(""))
+        self.examTimeBox.setObjectName(_fromUtf8("examTimeBox"))
+        self.horizontalLayout_2.addWidget(self.examTimeBox)
         spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem)
         self.editTopicButton = QtGui.QPushButton(self.centralwidget)
@@ -60,6 +68,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "Témakör szerkesztése", None))
         self.label.setText(_translate("MainWindow", "Téma:", None))
+        self.label_2.setText(_translate("MainWindow", "Vizsga ideje:", None))
+        self.examTimeBox.setToolTip(_translate("MainWindow", "A vizsga idejét percben adja meg", None))
         self.editTopicButton.setText(_translate("MainWindow", "Szerkeszt", None))
 
 

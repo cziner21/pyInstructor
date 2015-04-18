@@ -135,8 +135,13 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
 
 
     def AddNewTopicToDatabase(self) :
+        """
+        Új téma hozzáadása
+        a percben beírt vizsgaidőt megszorozzuk 60-al, hogy másodpercben szerepeljen az érték az adatbázisban
+
+        """
         if (self.ValidateAddNewTopicsBoxText()) :
-            self.DataBase.InsertIntoTopics(self.addNewTopicBox.text())
+            self.DataBase.InsertIntoTopics(self.addNewTopicBox.text(),int(self.examTimeBox.text()) * 60)
 
             self.topicListCombobox.clear()
             self.examsTypeCombobox.clear()
@@ -149,11 +154,16 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
     def ValidateAddNewTopicsBoxText(self) :
         error = ""
         validNameFormat = u"^[a-zA-Z+#\s]+$"
+        validExamTimeFormat = u"^[1-9][0-9]*$" #az első karakter nem lehet 0
 
         if (self.addNewTopicBox.text() == "") :
             error += u"A téma neve nem lehet üres!\n"
         if (self.addNewTopicBox.text() != "" and re.match(validNameFormat, self.addNewTopicBox.text()) == None) :
             error += u"A téma neve csak az angol ábécé karaktereit tartalmazhatja, illetve a + és # szimbólumokat!\n"
+        if (self.examTimeBox.text()== ""):
+            error += u"Új téma felvételéhez a vizsga megadása is kötelező!\n"
+        if (self.examTimeBox.text() != "" and re.match(validExamTimeFormat, self.examTimeBox.text()) == None):
+            error += u"A vizsga idejének formátuma nem megfelelő!\nCsak számokat írhat be, és az első számjegy nem lehet 0!\n"
 
         if error :
             QMessageBox.about(self, u"Hiba", error)
@@ -173,21 +183,22 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
 
 
 
+        #self.examsTypeCombobox.activated.connect(self.SelectedTopics)
+        self.examsTypeCombobox.setCurrentIndex(0)
+        self.GenerateQuizByTopic()
+        self.CurrentTopicId
+        self.questionIds
+        self.examsTypeCombobox.currentIndexChanged.connect(self.GenerateQuizByTopic)
+
         self.timer = QTimer()
 
         self.lcdNumber.setSegmentStyle(QLCDNumber.Flat)
         palette = self.lcdNumber.palette()
         palette.setColor(palette.WindowText, QColor(0, 255, 0))
         self.lcdNumber.setPalette(palette)
-        self.start_time = 1800
+        self.start_time = self.DataBase.GetExamTimeByTopicsId(self.CurrentTopicId)#1800
         self.lcdNumber.display("%02d:%02d" % (self.start_time / 60, self.start_time % 60))
 
-
-
-        #self.examsTypeCombobox.activated.connect(self.SelectedTopics)
-        self.examsTypeCombobox.setCurrentIndex(0)
-        self.GenerateQuizByTopic()
-        self.examsTypeCombobox.currentIndexChanged.connect(self.GenerateQuizByTopic)
         self.currentExamTableView.setVisible(False)
         self.sendExamButton.setVisible(False)
 
@@ -198,8 +209,7 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
 
 
 
-        self.CurrentTopicId
-        self.questionIds
+
 
     def SetupCountDown(self) :
         #Kapcsolótábla feltöltése
@@ -210,7 +220,7 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
         self.startExamButton.setEnabled(False)
         self.examsTypeCombobox.setEnabled(False)
         self.timer.stop()
-        self.start_time = 1800
+        self.start_time = self.DataBase.GetExamTimeByTopicsId(self.CurrentTopicId)#1800
         self.lcdNumber.display("%02d:%02d" % (self.start_time / 60, self.start_time % 60))
         # Restart the timer
         self.timer.start(1000)
@@ -248,10 +258,6 @@ class DashBoard(QMainWindow, dashBoardView.Ui_MainWindow) :
     def GenerateQuizByTopic(self) :
         self.yourPointsLabel.setText("")
         self.maxPointsLabel.setText("")
-
-
-
-
 
         self.currentExamTableView.setVisible(False)
         self.sendExamButton.setVisible(False)

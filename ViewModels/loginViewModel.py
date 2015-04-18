@@ -4,12 +4,9 @@ import hashlib
 import re   #regex modul
 
 from PyQt4.QtGui import *
-
 from DataBase import mySQLDatabaseConfig as dbConfig2
 from Views import loginView
 from ViewModels import dashBoardViewModel, forgotPasswordViewModel, signUpViewModel
-import mssqlServerDatabaseConfig as dbConfig
-
 
 class Login(QMainWindow,loginView.Ui_MainWindow):
 
@@ -42,11 +39,9 @@ class Login(QMainWindow,loginView.Ui_MainWindow):
             password = hashlib.sha512(self.passwordField.text()).hexdigest()
 
             if myDbConfig.TryToLogin(email,password):
-
-            #if hashlib.sha512("self.passwordField.text()").hexdigest() ==
-
                 self.otherWindow = dashBoardViewModel.DashBoard(email)
                 self.otherWindow.show()
+                #if hashlib.sha512("self.passwordField.text()").hexdigest() ==
             else:
                 QMessageBox.about(self, u"Hiba", u"Hibás név vagy jelszó!" )
 
