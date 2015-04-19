@@ -526,7 +526,7 @@ class MySqlDatabaseConfig(object):
         try:
             connection = MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db)
             Cursor = connection.cursor()
-           
+
 
             hexhash = hashlib.sha512(password).hexdigest()
 
@@ -793,7 +793,6 @@ class MySqlDatabaseConfig(object):
             logging.warning('Error while InsertIntoResults:\n    %s'%e.args)
         finally:
             connection.close()
-
 
 
 

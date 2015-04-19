@@ -1,0 +1,10 @@
+2015-01-07 11:38:54,329 :
+ User entered:
+   admin@admin.hu
+2015-01-07 11:39:25,562 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 order by fullName
+2015-01-07 11:39:37,424 :
+ New topic inserted: ff
+2015-01-07 11:39:37,459 :
+ New topic inserted: ff

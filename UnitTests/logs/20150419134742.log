@@ -1,0 +1,15 @@
+2015-04-19 13:47:42,164 :
+ Error while GetTopicsIndexByName:
+    tuple index out of range
+2015-04-19 13:47:42,180 :
+ New User inserted:
+  Tesztvezetéknév Tesztkeresztnév tesztmailcim@tesztmail.com
+2015-04-19 13:47:42,193 :
+ User entered:
+   valotlan@valotlan.hu
+2015-04-19 13:47:42,197 :
+ User entered:
+   user@user.hu
+2015-04-19 13:47:42,203 :
+ User entered:
+   admin@admin.hu

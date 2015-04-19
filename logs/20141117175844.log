@@ -1,0 +1,24 @@
+2014-11-17 17:58:58,280 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-17 17:59:46,118 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-17 17:59:51,742 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-17 17:59:58,075 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-17 18:00:41,283 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-17 18:01:20,309 :
+ Searching in admin page:
+    select u.id,concat(lastName,' ',firstName) as fullName, email, registered, city, address, phone, birthday, privilidge from users u inner join profil p on u.id = p.userId where 1 = 1 order by fullName
+2014-11-17 18:01:26,055 :
+ User entered:
+   cziner.adam@gmail.com
+2014-11-17 18:01:33,028 :
+ User entered:
+   cziner.adam@gmail.com
